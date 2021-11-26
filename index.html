@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Exemple de site e-commerce avec comme produit vedette les plantes, car la nature vous veut du bien, construire son projet web avec olivier Home Web"
+    />
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/img/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/img/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!--=============== REMIX ICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Responsive siteweb Plantix</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <i class="ri-leaf-line nav__logo-icon"></i> Plantix
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Accueil</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">À Propos</a>
+            </li>
+            <li class="nav__item">
+              <a href="#products" class="nav__link">Produits</a>
+            </li>
+            <li class="nav__item">
+              <a href="#faqs" class="nav__link">FAQs</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Nous contacter</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <img src="assets/img/home.png" alt="" class="home__img" />
+
+          <div class="home__data">
+            <h1 class="home__title">
+              Les Plantes nous Rendent <br />
+              la Vie Meilleure
+            </h1>
+            <p class="home__description">
+              Créez un design incroyable pour vos bureaux ou votre domicile.
+              Ajoutez de la nature à vos nouvelles idées.
+            </p>
+            <a href="#about" class="button button--flex">
+              Explorer <i class="ri-arrow-right-down-line button__icon"></i>
+            </a>
+          </div>
+
+          <div class="home__social">
+            <span class="home__social-follow">Follow us</span>
+
+            <div class="home__social-links">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-twitter-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section container" id="about">
+        <div class="about__container grid">
+          <img src="assets/img/about.png" alt="" class="about__img" />
+
+          <div class="about__data">
+            <h2 class="section__title about__title">
+              Qui sommes nous vraiment & <br />
+              pourquoi nous choisir ?
+            </h2>
+
+            <p class="about__description">
+              Nous avons plus de 3000 avis et nos clients font confiance à notre
+              circuit court et au service de livraison à chaque fois impeccable
+            </p>
+
+            <div class="about__details">
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Nous livrons toujours dans les temps.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Nous vous donnons un guide pratique pour prendre soin de votre
+                plante.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Nous faisons toujours un check-up après la vente.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Le remboursement est garanti.
+              </p>
+            </div>
+
+            <a href="#" class="button--link button--flex">
+              Acheter maintenant
+              <i class="ri-arrow-right-down-line button__icon"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== STEPS ====================-->
+      <section class="steps section container">
+        <div class="steps__bg">
+          <h2 class="section__title-center steps__title">
+            Étapes pour bien <br />
+            démarrer avec vos plantes
+          </h2>
+
+          <div class="steps__container grid">
+            <div class="steps__card">
+              <div class="steps__card-number">01</div>
+              <h3 class="steps__card-title">Choisir la Plante</h3>
+              <p class="steps__card-description">
+                Nous avons plusieurs variétés de plantes parmi lesquels vous
+                pouvez choisir.
+              </p>
+            </div>
+
+            <div class="steps__card">
+              <div class="steps__card-number">02</div>
+              <h3 class="steps__card-title">Passer une commande</h3>
+              <p class="steps__card-description">
+                Une fois votre commande définie, nous passons à l’étape suivante
+                qui est le livraison.
+              </p>
+            </div>
+
+            <div class="steps__card">
+              <div class="steps__card-number">03</div>
+              <h3 class="steps__card-title">Faire livrer les plantes</h3>
+              <p class="steps__card-description">
+                Notre processus de livraison est facile, vous recevez la plante
+                directement à votre porte.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PRODUCTS ====================-->
+      <section class="product section container" id="products">
+        <h2 class="section__title-center">
+          Consulter nos <br />
+          produits
+        </h2>
+
+        <p class="product__description">
+          Voici quelques plantes sélectionnées de notre salle d’exposition,
+          elles sont toutes en excellente forme et ont une longue durée de vie.
+          Achetez et profitez de la meilleure qualité.
+        </p>
+
+        <div class="product__container grid">
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img
+              src="assets/img/product1.png"
+              alt="plante"
+              class="product__img"
+            />
+
+            <h3 class="product__title">Cacti Plante</h3>
+            <span class="product__price">19.99€</span>
+
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img
+              src="assets/img/product2.png"
+              alt="plante"
+              class="product__img"
+            />
+
+            <h3 class="product__title">Cactus Plante</h3>
+            <span class="product__price">11.99€</span>
+
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img
+              src="assets/img/product3.png"
+              alt="plante"
+              class="product__img"
+            />
+
+            <h3 class="product__title">Aloe Vera Plante</h3>
+            <span class="product__price">7.99€</span>
+
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img
+              src="assets/img/product4.png"
+              alt="plante"
+              class="product__img"
+            />
+
+            <h3 class="product__title">Succulent Plante</h3>
+            <span class="product__price">5.99€</span>
+
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img
+              src="assets/img/product5.png"
+              alt="plante"
+              class="product__img"
+            />
+
+            <h3 class="product__title">Palmier Plante</h3>
+            <span class="product__price">10.99€</span>
+
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img
+              src="assets/img/product6.png"
+              alt="plante"
+              class="product__img"
+            />
+
+            <h3 class="product__title">Green Plante</h3>
+            <span class="product__price">8.99€</span>
+
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== QUESTIONS ====================-->
+      <section class="questions section" id="faqs">
+        <h2 class="section__title-center questions__title container">
+          Quelques questions <br />
+          que l'on nous pose souvent ?
+        </h2>
+
+        <div class="questions__container container grid">
+          <div class="questions__group">
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  Mes fleurs tombent ou meurent?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Les plantes sont un moyen facile d’ajouter de l’énergie et de
+                  la couleur et de transformer votre l’espace mais bien choisir
+                  sa plante en fonction de son espace de vie pour quelle dure
+                  longtemps.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  Qu’est-ce qui fait pâlir les feuilles?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Les plantes sont un moyen facile d’ajouter de l’énergie et de
+                  la couleur et de transformer votre l’espace mais quelle plante
+                  est pour vous. Choisir la bonne plante.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  Qu’est-ce qui cause les feuilles brunes croustillantes?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Les plantes sont un moyen facile d’ajouter de l’énergie et de
+                  la couleur et de transformer votre l’espace mais quelle plante
+                  est pour vous. Choisir la bonne plante.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="questions__group">
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  Comment choisir une plante ?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Les plantes sont un moyen facile d’ajouter de l’énergie et de
+                  la couleur et de transformer votre l’espace mais quelle plante
+                  est pour vous. Choisir la bonne plante.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  Comment puis-je changer les pots?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Les plantes sont un moyen facile d’ajouter de l’énergie et de
+                  la couleur et de transformer votre l’espace mais quelle plante
+                  est pour vous. Choisir la bonne plante.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  Pourquoi les moucherons volent-ils autour de ma plante?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Les plantes sont un moyen facile d’ajouter de l’énergie et de
+                  la couleur et de transformer votre l’espace mais quelle plante
+                  est pour vous. Choisir la bonne plante.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section container" id="contact">
+        <div class="contact__container grid">
+          <div class="contact__box">
+            <h2 class="section__title">
+              Contactez-nous dès aujourd’hui <br />
+              par téléphone ou<br />
+              email
+            </h2>
+
+            <div class="contact__data">
+              <div class="contact__information">
+                <h3 class="contact__subtitle">
+                  Appelez-nous pour une assistance instantanée
+                </h3>
+                <span class="contact__description">
+                  <i class="ri-phone-line contact__icon"></i>
+                  +999 888 777
+                </span>
+              </div>
+
+              <div class="contact__information">
+                <h3 class="contact__subtitle">Ecrivez nous par mail</h3>
+                <span class="contact__description">
+                  <i class="ri-mail-line contact__icon"></i>
+                  contact@homemade-web.com
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form">
+            <div class="contact__inputs">
+              <div class="contact__content">
+                <input type="email" placeholder=" " class="contact__input" />
+                <label for="" class="contact__label">Email</label>
+              </div>
+
+              <div class="contact__content">
+                <input type="text" placeholder=" " class="contact__input" />
+                <label for="" class="contact__label">Sujet</label>
+              </div>
+
+              <div class="contact__content contact__area">
+                <textarea
+                  name="message"
+                  placeholder=" "
+                  class="contact__input"
+                ></textarea>
+                <label for="" class="contact__label">Message</label>
+              </div>
+            </div>
+
+            <button class="button button--flex">
+              Envoyer Message
+              <i class="ri-arrow-right-up-line button__icon"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">
+            <i class="ri-leaf-line footer__logo-icon"></i> Plantix
+          </a>
+
+          <h3 class="footer__title">
+            Abonnez-vous à notre newsletter <br />
+            pour rester à jour
+          </h3>
+
+          <div class="footer__subscribe">
+            <input
+              type="email"
+              placeholder="Entrer votre email"
+              class="footer__input"
+            />
+
+            <button class="button button--flex footer__button">
+              S'inscrire
+              <i class="ri-arrow-right-up-line button__icon"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Notre Adresse</h3>
+
+          <ul class="footer__data">
+            <li class="footer__information">21 - Perou</li>
+            <li class="footer__information">Le lac Titicaca- 44310</li>
+            <li class="footer__information">123-456-789</li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Nous Contacter</h3>
+
+          <ul class="footer__data">
+            <li class="footer__information">+999 888 777</li>
+
+            <div class="footer__social">
+              <a href="https://www.facebook.com/" class="footer__social-link">
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a href="https://www.instagram.com/" class="footer__social-link">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="https://twitter.com/" class="footer__social-link">
+                <i class="ri-twitter-fill"></i>
+              </a>
+            </div>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Nous acceptons tout les cartes bancaire</h3>
+
+          <div class="footer__cards">
+            <img src="assets/img/card1.png" alt="" class="footer__card" />
+            <img src="assets/img/card2.png" alt="" class="footer__card" />
+            <img src="assets/img/card3.png" alt="" class="footer__card" />
+            <img src="assets/img/card4.png" alt="" class="footer__card" />
+          </div>
+        </div>
+      </div>
+
+      <p class="footer__copy">
+        &#169; oliive33. Site factice Tout droits réservé
+      </p>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-fill scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
